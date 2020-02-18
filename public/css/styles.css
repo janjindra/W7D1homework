@@ -1,0 +1,62 @@
+header {
+  background-color: black;
+  color: White;
+  font-family: sans-serif;
+  border-color: black;
+  border-width: thick;
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+ol {
+  background-color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.blank {
+  background-color: white
+}
+
+#add-button {
+  font-size: 16px;
+  color: White;
+  background: black;
+  border: 5px solid black;
+  margin: 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin:auto;
+  display:block;
+}
+
+#new-item {
+  position: center;
+  width: 250px;
+  padding: 0px;
+  font-size: 15pt;
+  background: white;
+  border-color: black;
+  border-width: thick;
+}
+
+li.high {
+  color: red;
+}
+
+li.low {
+  color: green;
+}
+
+#high {
+  border-color: black;
+  border-width: medium;
+  background-color: black
+}

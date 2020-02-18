@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/bundle.js"></script>
+    <br><h1>Your To-Do List for Today</h1><br>
+</header>
+<body>
+  <div id="app">
+<br>
+    <form v-on:submit.prevent="saveNewItem" align="center">
+      <!-- <label for="new-item">Add a new to-do: </label> -->
+      <input id="new-item" type="text" v-model="newItem"/>
+      <label for="high">High </label>
+      <input id="high" type="radio" value="High" v-model="newPriority"/>
+      <label for="low">Low </label>
+      <input id="low" type="radio" value="Low" v-model="newPriority"/><br><br>
+
+      <input id="add-button" type="submit" value="Save New Item"/>
+    </form>
+
+  <ol><br>
+      <li v-for="item in items" v-bind:class="item.priority=='High' ? 'high' : 'low' ">
+        <span> {{ item.name }}: </span>
+        <span> {{ item.priority }} </span>
+        <br><br>
+      </li>
+    </ol>
+
+
+</div>
+</body>
+</html>
